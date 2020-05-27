@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
     <title>Портфолио</title>
 </head>
 
@@ -67,21 +68,346 @@
                         <a href="#" class="social__link">
                             <img src="{{url_for('static', filename='icons/discord.svg')}}" alt="">
                         </a>
+                    </div>
 
+                    <a href="#" class="btn">связь</a>
+                    <a href="#" class="btn rev">мое резюме</a>
+                </div>
+            </div>
+    </section>
+    <!-- /INTRO -->
+
+    <!-- WORKS  -->
+    <div class="works">
+        <div class="container">
+
+            <div class="works__nav">
+                <a href="#" class="works__nav-link">Все</a>
+                <a href="#" class="works__nav-link">Приложения</a>
+                <a href="#" class="works__nav-link">Сайты</a>
+                <a href="#" class="works__nav-link">Другие</a>
+            </div>
+
+            <div class="portfolio">
+
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img src="https://placehold.it/370x300" class="work__img" alt="">
+                        <div class="work__content">
+                            <div class="work__cat ">category</div>
+                            <div class="work__title">Project Title</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img src="https://placehold.it/370x300" class="work__img" alt="">
+                        <div class="work__content">
+                            <div class="work__cat ">category</div>
+                            <div class="work__title">Project Title</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img src="https://placehold.it/370x300" class="work__img" alt="">
+                        <div class="work__content">
+                            <div class="work__cat ">category</div>
+                            <div class="work__title">Project Title</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img src="https://placehold.it/370x300" class="work__img" alt="">
+                        <div class="work__content">
+                            <div class="work__cat ">category</div>
+                            <div class="work__title">Project Title</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img src="https://placehold.it/370x300" class="work__img" alt="">
+                        <div class="work__content">
+                            <div class="work__cat ">category</div>
+                            <div class="work__title">Project Title</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img src="https://placehold.it/370x300" class="work__img" alt="">
+                        <div class="work__content">
+                            <div class="work__cat ">category</div>
+                            <div class="work__title">Project Title</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn--sm btn--bd">загрузить больше</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- /WORKS  -->
+
+
+    <!-- ABOUT ME -->
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__img">
+                    <img src="{{ url_for('static', filename='img/photo2.png') }}" alt="">
+                </div>
+                <div class="about__content">
+                    <h2 class="about__subtitle">обо мне</h2>
+                    <h1 class="about__title">кто тут я</h1>
+                    <div class="about__text">
+                        <p>Я - Рюхманов Максим Дмитриевич, или просто Макс. Люблю покушать и повыполнять всякого рода
+                            интересные заказы. Открыт к новому опыту, рад буду пообщаться со всеми.</p>
+                        <p>Профессия у меня - это почетный Junior Full Stack Python Developer(можно JFSPD). Делаю любую
+                            работу, без исключений. Готов взяться за сложную работу, которую никогда более не делал. Мой
+                            стаж - это всего лишь {{time.days}} дней.</p>
+                        <hr width="30%">
+
+                        <div class="about__technologies">
+                            <p class="about__technologies--title">Из владеемых технологий:</p>
+                            <ul class="about__technologies--list">
+                                <li class="about__technologies--item">
+                                    python
+                                    <ul>
+                                        <li>django</li>
+                                        <li>pep</li>
+                                        <li>pip</li>
+                                        <li>flask</li>
+                                        <li>парсинг</li>
+                                        <li>and more..</li>
+                                    </ul>
+                                </li>
+                                <li class="about__technologies--item">
+                                    golang
+                                </li>
+                                <li class="about__technologies--item">
+                                    git, github
+                                </li>
+                                <li class="about__technologies--item">
+                                    c++
+                                </li>
+                                <li class="about__technologies--item">
+                                    php
+                                </li>
+                                <li class="about__technologies--item">
+                                    dart, flutter
+                                </li>
+                                <li class="about__technologies--item">
+                                    swift
+                                </li>
+                                <li class="about__technologies--item">
+                                    javascript
+                                </li>
+                                <li class="about__technologies--item">
+                                    high computer skills
+                                </li>
+                                <li class="about__technologies--item">
+                                    html
+                                    <ul>
+                                        <li>bootstrap</li>
+                                        <li>jinja2</li>
+                                        <li>верстка</li>
+                                    </ul>
+                                </li>
+                                <li class="about__technologies--item">
+                                    css
+                                    <ul>
+                                        <li>lass</li>
+                                    </ul>
+                                </li>
+                                <li class="about__technologies--item">
+                                    linux
+                                </li>
+                                <li class="about__technologies--item">
+                                    ооп
+                                </li>
+                                <li class="about__technologies--item">
+                                    http/https
+                                </li>
+                                <li class="about__technologies--item">
+                                    sql
+                                    <ul>
+                                        <li>mysql</li>
+                                        <li>sqlite</li>
+                                    </ul>
+                                </li>
+                                <li class="about__technologies--item">
+                                    nosql
+                                    <ul>
+                                        <li>mongodb</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
                     <a href="#" class="btn">связь</a>
                     <button class="btn rev" type="button">мое резюме</button>
                 </div>
-
-                <div class="intro__img"></div>
-
             </div>
         </div>
     </section>
-    <!-- /INTRO -->
+    <!-- /ABOUT ME -->
 
- 
+    <!-- REVIEWS -->
+    <div class="reviews">
+        <div class="container">
+
+            <div class="reviews__item">
+                <div class="reviews__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget
+                        luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros
+                        sem, elementum consequat est consequat eu.
+                    </p>
+                    <p>
+                        Quisque aliquet a ipsum nec tincidunt. Nulla vitae rhoncus leo. Praesent dui sapien, bibendum
+                        quis tempus dictum.
+                    </p>
+                </div>
+
+                <div class="reviews__author">
+                    <img src="https://placehold.it/103/33" class="reviews__photo" alt="">
+                    <div class="reviews__name">Edward M. Brooks</div>
+                    <div class="reviews__company">Marketing House</div>
+                    <div class="reviews__rating">
+                        <img class="reviews__star" src="{{ url_for('static', filename='icons/star.svg') }}" alt="">
+                        <img class="reviews__star" src="{{ url_for('static', filename='icons/star.svg') }}" alt="">
+                        <img class="reviews__star" src="{{ url_for('static', filename='icons/star.svg') }}" alt="">
+                        <img class="reviews__star" src="{{ url_for('static', filename='icons/star.svg') }}" alt="">
+                        <img class="reviews__star" src="{{ url_for('static', filename='icons/star-half.svg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /REVIEWS -->
+
+    <!-- NEWS -->
+    <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <h1 class="news__title">read me</h1>
+                <p class="news__text">Тут буит новости</p>
+            </div>
+
+            <div class="articles">
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <div class="articles__date">
+                                10 <br> june
+                            </div>
+                            <a href="#"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
+                        </div>
+                        <div class="articles__content">
+                            <div class="articles__title"><a href="#">TEN THE BEST APP IN 2017</a></div>
+                            <div class="articles__cat">CATEGORY </div>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
+                                vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                        </div>
+                        <a href="#" class="btn btn--sm btn--bd">Читать больше</a>
+                    </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <div class="articles__date">
+                                10 <br> june
+                            </div>
+                            <a href="#"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
+                        </div>
+                        <div class="articles__content">
+                            <div class="articles__title"><a href="#">TEN THE BEST APP IN 2017</a></div>
+                            <div class="articles__cat">CATEGORY </div>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
+                                vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                        </div>
+                        <a href="#" class="btn btn--sm btn--bd">Читать больше</a>
+                    </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <div class="articles__date">
+                                10 <br> june
+                            </div>
+                            <a href="#"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
+                        </div>
+                        <div class="articles__content">
+                            <div class="articles__title"><a href="#">TEN THE BEST APP IN 2017</a></div>
+                            <div class="articles__cat">CATEGORY </div>
+                            <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
+                                vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
+                        </div>
+                        <a href="#" class="btn btn--sm btn--bd">Читать больше</a>
+                    </div>
+                </div>
+            </div>
+            <div class="news__footer">
+                <a href="#">см. другие посты</a>
+            </div>
+        </div>
+    </section>
+    <!-- /NEWS -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        &copy; 2020 - AthonD
+                    </div>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <img src="{{url_for('static', filename='icons/vk.svg')}}" alt="">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="{{url_for('static', filename='icons/linkedin-in.svg')}}" alt="">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="{{url_for('static', filename='icons/twitter.svg')}}" alt="">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="{{url_for('static', filename='icons/slack.svg')}}" alt="">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="{{url_for('static', filename='icons/github.svg')}}" alt="">
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <img src="{{url_for('static', filename='icons/discord.svg')}}" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="footer__nave">
+                    <a href="#" class="footer__nav-link">Работы</a>
+                    <a href="#" class="footer__nav-link">Обо Мне</a>
+                    <a href="#" class="footer__nav-link">Блог</a>
+                    <a href="#" class="footer__nav-link">Контакты</a>
+                    <a href="#" class="footer__nav-link footer__nav-link--bn">Cвязь</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
