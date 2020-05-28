@@ -27,10 +27,10 @@
                 </div>
 
                 <nav class="nav">
-                    <a class="nav__link {% if active == "index" %}active{%endif%}" href="#">работы</a>
-                    <a class="nav__link {% if active == "about" %}active{%endif%}" href="#">обо мне</a>
-                    <a class="nav__link {% if active == "blog" %}active{%endif%}" href="#">блог</a>
-                    <a class="nav__link {% if active == "contact" %}active{%endif%}" href="#">контакты</a>
+                    <a class="nav__link {% if active == "index" %}active{%endif%}" href="none">работы</a>
+                    <a class="nav__link {% if active == "about" %}active{%endif%}" href="none">обо мне</a>
+                    <a class="nav__link {% if active == "blog" %}active{%endif%}" href="none">блог</a>
+                    <a class="nav__link {% if active == "contact" %}active{%endif%}" href="none">контакты</a>
                     <a class="nav__link mail" href="mailto:athond@icloud.com">связь</a>
                 </nav>
 
@@ -38,6 +38,17 @@
         </div>
     </header>
     <!-- /HEADER -->
+    <!-- ALERTS -->
+    <div class="container">
+        {% for message in get_flashed_messages() %}
+        <div class="alert alert-warring">
+            <div class="alert__item">
+                <div class="messege">{{ message }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <!-- /ALERTS -->
 
     <!-- INTRO -->
     <section class="intro">
@@ -50,28 +61,28 @@
                     <div class="intro__prof">Junior Python Developer</div>
 
                     <div class="social">
-                        <a href="#" class="social__link">
+                        <a href="https://vk.com/athonmaks" class="social__link" target="_blank">
                             <img src="{{url_for('static', filename='icons/vk.svg')}}" alt="">
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="https://www.linkedin.com/in/athond/" class="social__link" target="_blank">
                             <img src="{{url_for('static', filename='icons/linkedin-in.svg')}}" alt="">
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="none" class="social__link">
                             <img src="{{url_for('static', filename='icons/twitter.svg')}}" alt="">
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="none" class="social__link">
                             <img src="{{url_for('static', filename='icons/slack.svg')}}" alt="">
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="https://github.com/ApppleTurnover" class="social__link" target="_blank">
                             <img src="{{url_for('static', filename='icons/github.svg')}}" alt="">
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="https://discord.gg/qNuyAa6" class="social__link" target="_blank">
                             <img src="{{url_for('static', filename='icons/discord.svg')}}" alt="">
                         </a>
                     </div>
 
-                    <a href="#" class="btn">связь</a>
-                    <a href="#" class="btn rev">мое резюме</a>
+                    <a href="none" class="btn">связь</a>
+                    <a href="none" class="btn rev">мое резюме</a>
                 </div>
             </div>
     </section>
@@ -82,10 +93,10 @@
         <div class="container">
 
             <div class="works__nav">
-                <a href="#" class="works__nav-link">Все</a>
-                <a href="#" class="works__nav-link">Приложения</a>
-                <a href="#" class="works__nav-link">Сайты</a>
-                <a href="#" class="works__nav-link">Другие</a>
+                <a href="" class="works__nav-link">Все</a>
+                <a href="" class="works__nav-link">Приложения</a>
+                <a href="" class="works__nav-link">Сайты</a>
+                <a href="" class="works__nav-link">Другие</a>
             </div>
 
             <div class="portfolio">
@@ -148,7 +159,7 @@
             </div>
 
             <div class="text-center">
-                <button class="btn btn--sm btn--bd">загрузить больше</button>
+                <a href="none" class="btn btn--sm btn--bd">загрузить больше</a>
             </div>
 
         </div>
@@ -252,8 +263,8 @@
                         </div>
                     </div>
 
-                    <a href="#" class="btn">связь</a>
-                    <button class="btn rev" type="button">мое резюме</button>
+                    <a href="none" class="btn">связь</a>
+                    <a href="none" class="btn rev">мое резюме</a>
                 </div>
             </div>
         </div>
@@ -310,16 +321,16 @@
                             <div class="articles__date">
                                 10 <br> june
                             </div>
-                            <a href="#"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
+                            <a href="none"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
                         </div>
                         <div class="articles__content">
-                            <div class="articles__title"><a href="#">TEN THE BEST APP IN 2017</a></div>
+                            <div class="articles__title"><a href="none">TEN THE BEST APP IN 2017</a></div>
                             <div class="articles__cat">CATEGORY </div>
                             <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
                                 vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
                         </div>
-                        <a href="#" class="btn btn--sm btn--bd">Читать больше</a>
+                        <a href="none" class="btn btn--sm btn--bd">Читать больше</a>
                     </div>
                 </div>
                 <div class="articles__col">
@@ -328,16 +339,16 @@
                             <div class="articles__date">
                                 10 <br> june
                             </div>
-                            <a href="#"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
+                            <a href="none"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
                         </div>
                         <div class="articles__content">
-                            <div class="articles__title"><a href="#">TEN THE BEST APP IN 2017</a></div>
+                            <div class="articles__title"><a href="none">TEN THE BEST APP IN 2017</a></div>
                             <div class="articles__cat">CATEGORY </div>
                             <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
                                 vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
                         </div>
-                        <a href="#" class="btn btn--sm btn--bd">Читать больше</a>
+                        <a href="none" class="btn btn--sm btn--bd">Читать больше</a>
                     </div>
                 </div>
                 <div class="articles__col">
@@ -346,21 +357,21 @@
                             <div class="articles__date">
                                 10 <br> june
                             </div>
-                            <a href="#"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
+                            <a href="none"> <img class="articles__photo" src="https://placehold.it/370x260" alt=""> </a>
                         </div>
                         <div class="articles__content">
-                            <div class="articles__title"><a href="#">TEN THE BEST APP IN 2017</a></div>
+                            <div class="articles__title"><a href="none">TEN THE BEST APP IN 2017</a></div>
                             <div class="articles__cat">CATEGORY </div>
                             <div class="articles__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                 Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum
                                 vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.</div>
                         </div>
-                        <a href="#" class="btn btn--sm btn--bd">Читать больше</a>
+                        <a href="none" class="btn btn--sm btn--bd">Читать больше</a>
                     </div>
                 </div>
             </div>
             <div class="news__footer">
-                <a href="#">см. другие посты</a>
+                <a href="none">см. другие посты</a>
             </div>
         </div>
     </section>
@@ -375,33 +386,33 @@
                         &copy; 2020 - AthonD
                     </div>
                     <div class="footer__social">
-                        <a href="#" class="footer__social-link">
+                        <a href="https://vk.com/athonmaks" class="footer__social-link" target="_blank">
                             <img src="{{url_for('static', filename='icons/vk.svg')}}" alt="">
                         </a>
-                        <a href="#" class="footer__social-link">
+                        <a href="https://www.linkedin.com/in/athond" class="footer__social-link" target="_blank">
                             <img src="{{url_for('static', filename='icons/linkedin-in.svg')}}" alt="">
                         </a>
-                        <a href="#" class="footer__social-link">
+                        <a href="none" class="footer__social-link">
                             <img src="{{url_for('static', filename='icons/twitter.svg')}}" alt="">
                         </a>
-                        <a href="#" class="footer__social-link">
+                        <a href="none" class="footer__social-link">
                             <img src="{{url_for('static', filename='icons/slack.svg')}}" alt="">
                         </a>
-                        <a href="#" class="footer__social-link">
+                        <a href="https://github.com/ApppleTurnover" class="footer__social-link" target="_blank">
                             <img src="{{url_for('static', filename='icons/github.svg')}}" alt="">
                         </a>
-                        <a href="#" class="footer__social-link">
+                        <a href="https://discord.gg/qNuyAa6" class="footer__social-link" target="_blank">
                             <img src="{{url_for('static', filename='icons/discord.svg')}}" alt="">
                         </a>
                     </div>
                 </div>
 
                 <nav class="footer__nave">
-                    <a href="#" class="footer__nav-link">Работы</a>
-                    <a href="#" class="footer__nav-link">Обо Мне</a>
-                    <a href="#" class="footer__nav-link">Блог</a>
-                    <a href="#" class="footer__nav-link">Контакты</a>
-                    <a href="#" class="footer__nav-link footer__nav-link--bn">Cвязь</a>
+                    <a href="none" class="footer__nav-link">Работы</a>
+                    <a href="none" class="footer__nav-link">Обо Мне</a>
+                    <a href="none" class="footer__nav-link">Блог</a>
+                    <a href="none" class="footer__nav-link">Контакты</a>
+                    <a href="none" class="footer__nav-link footer__nav-link--bn">Cвязь</a>
                 </nav>
             </div>
         </div>

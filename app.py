@@ -16,6 +16,10 @@ def index():
 
     return render_template("index.html", active="index", time=work_experience)
 
+@app.route("/none", methods=["GET", "POST"])
+def none():
+    flash("Unwork")
+    return redirect(url_for('index'))
 
 if __name__ == "__main__":
     app.run()

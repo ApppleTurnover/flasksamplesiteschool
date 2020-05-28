@@ -638,6 +638,14 @@ p {
   height: 24px;
 }
 
+.footer__social-link:hover {
+  transition: all 0.2s linear;
+}
+
+.footer__social-link:hover {
+  filter: invert(1);
+}
+
 .footer__nav {
   display: flex;
   align-items: center;
@@ -669,3 +677,23 @@ p {
   transform: scale(1.08);
   filter: invert(0.9);
 }
+
+/* alert */
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-self: space-between;
+  margin: 10px 0 15px;
+  padding: 10px;
+}
+
+.alert-warring {
+  background: red;
+  color: #fff;
+  opacity: 25%;
+  box-shadow: 0 0 10px red;
+
+  box-sizing: border-box;
+}
+
